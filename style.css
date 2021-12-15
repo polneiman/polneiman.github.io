@@ -2,11 +2,14 @@ body {
     font-family: Arial, Tahoma, Verdana, 'Lustria', serif, sans-serif;
     font-size: 0.75rem;
     line-height: 1.25rem;
+    margin: 1rem auto;
+}
+
+.index-wrapper {
     text-align: center;
     display: grid;
     grid-template-rows: min-content min-content;
     row-gap: 15px;
-    margin: 1rem auto;
     width: 12rem;
 }
 
@@ -33,6 +36,13 @@ body {
 }
 
 .musico-wrapper {
-    width: 20rem;
-    margin-bottom: 2rem;
+    /*On smaller devices*/
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    /*On devices larger than Ipad */
+    .musico-wrapper {
+        width: 30rem;
+    }
 }
